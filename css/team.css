@@ -1,0 +1,13 @@
+.yapt-our-values {
+  color: white;
+  border-bottom: 1px solid #ff5a00;
+  margin-left: calc(50% - 82.5px);
+  margin-bottom: 45px;
+  width: 165px;
+  text-align: center;
+}
+
+.about-stats {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
