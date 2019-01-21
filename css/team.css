@@ -1,6 +1,6 @@
 .yapt-our-values {
   color: white;
-  border-bottom: 1px solid #ff5a00;
+  border-bottom: 1px solid #000000 /*theme-colour*/;
   margin-left: calc(50% - 82.5px);
   margin-bottom: 45px;
   width: 165px;
