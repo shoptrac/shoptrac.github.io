@@ -624,7 +624,7 @@ ul.tabs-nav .tab-nav.active {
     border: 0;
     background: #000000 /*theme-colour*/;
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000 /*theme-colour*/', endColorstr='#ff3600',GradientType=1 ); /* ie6-9 */
-    color: #fff;
+    color: #000;
 }
 
 .icon-box figure img:nth-of-type(1) {
@@ -1657,7 +1657,7 @@ ul.tabs-nav .tab-nav.active {
 
 .pagination a:hover,
 .pagination .active a {
-    color: #ff3900;
+    color: #000000 /*theme-colour*/;
 }
 
 /*--------------------------------------------------------------
