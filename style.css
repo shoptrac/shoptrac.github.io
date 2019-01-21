@@ -1657,7 +1657,7 @@ ul.tabs-nav .tab-nav.active {
 
 .pagination a:hover,
 .pagination .active a {
-    color: #ff3900;
+    color: #000000 /*theme-colour*/;
 }
 
 /*--------------------------------------------------------------
