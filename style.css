@@ -1580,8 +1580,16 @@ ul.tabs-nav .tab-nav.active {
     background: url(images/news-bg.jpg) no-repeat center;
 }
 
+.news-article-page .page-header {
+    background: url(images/DSCF4045.jpeg) no-repeat center;
+}
+
 .news-wrap {
     padding: 96px 0;
+}
+
+.news-article-page .news-wrap {
+    padding: 0px 0;
 }
 
 .news-content {
@@ -1650,6 +1658,11 @@ ul.tabs-nav .tab-nav.active {
     margin-top: 32px;
     font-size: 14px;
     color: #929191;
+}
+
+.news-article-page .news-wrap .container {
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 .news-content .entry-footer {
