@@ -77,8 +77,8 @@
                 <div class="col-12 col-lg-12">
                     <div class="news-content">
                         <div class="entry-content">
-                            <H1>Title</H1>
-                            <div class="posted-date">February 5, 2019</div>
+                            <H1>Profiling YOLONets and MobileNetSSD's</H1>
+                            <div class="posted-date">February 13, 2019</div>
                         </div>
                     </div>
                 </div>
@@ -88,7 +88,7 @@
                 <div class="col-12 col-lg-12">
                     <div class="news-content">
                         <div class="entry-content">
-                            <p>This week had a lot of study regarding different ANN's and their performance on the RockPro.</p>
+                            <p>This week had a lot of study regarding different ANN's and their performance on the RockPro. Upon doing some research, two NN's stood out as potential candidates from the list: YOLO Networks (You Only Look Once), and SSDNet (Single Shot Multi Box). These NN's have grown in popularity for their application in mobile devices while maintaining a good accuracy at detecting objects. Below is a screenshot of the performance on the RP when using a YOLONet.</p>
                         </div>
                     </div>
                 </div>
@@ -102,11 +102,11 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-lg-8">
+                <div class="col-12 col-lg-12">
                     <div class="news-content">
                         <div class="entry-content" style="text-align: center">
-                            <img src="../images/DSCF4074.JPG" alt="">
-                            This is a caption to the image. It was taken on February 5, 2019.
+                            <img src="../images/device_screenshot_7fps.png" alt="">
+                            YOLONet performance. February 13, 2019.
                         </div>
                     </div>
                 <div class="col-12 col-lg-2">
@@ -131,19 +131,21 @@
 
 
             <div class="row">
-                <div class="col-12 col-lg-8">
+                <div class="col-12 col-lg-12">
                     <div class="news-content">
                         <div class="entry-content" style="text-align: center">
-                            <img src="../images/DSCF4074.JPG" alt="">
-                            Tables of two different ANN's that were selected as potential candidates people detection.
+                            <img src="../images/device_screenshot_12fps.png" alt="">
+                            Far better performance using MobileNetSSD. February 13, 2019.
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="col-12 col-lg-4">
+            <div class="row">
+                <div class="col-12 col-lg-12">
                     <div class="news-content">
                         <div class="entry-content">
-                            <p>Surprisingly, the YOLONet was found to provide poorer performance than the MobileNetSSD. Despite the fact that the YOLONet promised better performance, in testing this was not the case as per the lower average frames per second when processing a video of people walking through traffic. This could have resulted from the fact that the model that was used was trained to locate more than just people, but detect other inanimate objects which likely required quite a bit of processing.</p>
+                            <p>Surprisingly, the YOLONet was found to provide poorer performance than the MobileNetSSD. Despite the fact that the YOLONet promised better performance, in testing this was not the case as per the lower average frames per second when processing a video of people walking through traffic. This could have resulted from the fact that the model that was used was trained to locate more than just people, but detect other inanimate objects which likely required quite a bit of processing. The MobileNet provided far better performance but still not enough. We think some optimizations can still be made to further improve this performance but for now it is clear that the MobileNet is the way to go as detection is required.</p>
                         </div>
                     </div>
                 </div>
