@@ -91,64 +91,17 @@
                 <div class="col-12 col-lg-12">
                     <div class="news-content">
                         <div class="entry-content">
-                            <p>BLABLABLA</p>
+                            <p>Last week, a focus was placed on detection algorithms for finding humans that enter the camera frame. This operation alone is extremely expensive and no computationally-inexpensive alternative exists. To reduce the amount of computational complexity, ShopTrac chooses to run the detection stage once every N frames and uses a object tracking algorithm for all the other frames. The tracking algorithm is known to be a lot less computationally expensive than the detection algorithm so it will be capable of increasing the frame throughput on the RockPro64. Luckily, OpenCV, the vision processing library that ShopTrac uses, has multiple built in object tracking algorithms. A study to try out the different algorithms available to us and if they would be viable for ShopTrac's needs was conducted. A sample program with a <a href="https://www.pond5.com/stock-footage/44516099/charlie-chaplin-kid-auto-races-venice-1914.html#1">video of Charlie Chaplin walking around</a> was used against a <a href="https://www.learnopencv.com/object-tracking-using-opencv-cpp-python/">sample program</a> that initializes the different tracking algorithms and allows you to compare their performance.</p>
                         </div>
                     </div>
                 </div>
             </div><!-- row-->
 
             <div class="row">
-                <div class="col-12 col-lg-2">
-                    <div class="news-content">
-                        <div class="entry-content">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-lg-12">
-                    <div class="news-content">
-                        <div class="entry-content" style="text-align: center">
-                            <img src="../images/device_screenshot_7fps.png" alt="">
-                            SOME TRACKERS. Feb 20, 2019.
-                        </div>
-                    </div>
-                <div class="col-12 col-lg-2">
-                    <div class="news-content">
-                        <div class="entry-content">
-                        </div>
-                    </div>
-                </div>
-
-                </div><!-- .col -->
-            </div><!-- row-->
-
-            <div class="row">
-                <div class="col-12 col-lg-12">
-                    <div class="news-content">
-                        <div class="entry-content" style="margin-top: 0">
-                            <p>BLABLA</p>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- row-->
-
-
-            <div class="row">
-                <div class="col-12 col-lg-12">
-                    <div class="news-content">
-                        <div class="entry-content" style="text-align: center">
-                            <img src="../images/device_screenshot_12fps.png" alt="">
-                            BEST PERFORMANT FOR US MEDIANFLOW. February 13, 2019.
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
                 <div class="col-12 col-lg-12">
                     <div class="news-content">
                         <div class="entry-content">
-                            <p>BLABL</p>
+                            <p>From the 8 built in trackers that exist in OpenCV, the one that best suited the needs of ShopTrac was found to be the MedianFlow or the CSRT tracker. Both of these trackers performed well, kept track of the subject, even when turned around, and the bounding boxes that followed the subject were fairly accurate throughout the experiment. The CSRT tracker performed better than the MedianFlow, but the CSRT had better tracking overall.</p>
                         </div>
                     </div>
                 </div>
