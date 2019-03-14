@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ShopTrac News</title>
+    <link rel="shortcut icon" href="../images/favicon.png"/>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+
+    <!-- ElegantFonts CSS -->
+    <link rel="stylesheet" href="../css/elegant-fonts.css">
+
+    <!-- themify-icons CSS -->
+    <link rel="stylesheet" href="../css/themify-icons.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="../css/swiper.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="single-page news-article-page">
+<header class="site-header">
+    <div class="nav-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex flex-wrap justify-content-between align-items-center">
+                    <div class="site-branding d-flex align-items-center">
+                        <a class="d-block" href="../index.html" rel="home"><img class="d-block" src="../images/logo.png" alt="logo"></a>
+                    </div><!-- .site-branding -->
+
+                    <nav class="site-navigation d-flex justify-content-end align-items-center">
+                        <ul class="d-flex flex-column flex-lg-row justify-content-lg-end align-content-center">
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="../about.html">About</a></li>
+                            <li><a href="../team.html">The Team</a></li>
+                            <li class="current-menu-item"><a href="../news.html">News</a></li>
+                            <li><a href="../contact.html">Contact</a></li>
+                        </ul>
+                    </nav><!-- .site-navigation -->
+
+                    <div class="hamburger-menu d-lg-none">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div><!-- .hamburger-menu -->
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </div><!-- .nav-bar -->
+</header><!-- .site-header -->
+
+<div class="page-header">
+
+</div><!-- .page-header -->
+
+
+<!-- ========== ======================= ========== -->
+<!-- ========== ======================= ========== -->
+<!-- ========== ======================= ========== -->
+<!-- ========== DO NOT TOUCH ABOVE THIS ========== -->
+<!-- ========== ======================= ========== -->
+<!-- ========== ======================= ========== -->
+<!-- ========== ======================= ========== -->
+
+
+<div class="news-wrap">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-12 col-lg-12">
+                <div class="news-content">
+                    <div class="entry-content">
+                        <H1>Putting it All Together</H1>
+                        <div class="posted-date">February 28, 2019</div>
+                        <div class="post-author">by David Huang</div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- row-->
+
+        <div class="row">
+            <div class="col-12 col-lg-12">
+                <div class="news-content">
+                    <div class="entry-content">
+                        <p>At this point in time, all of the core tech run in-house that handles the facial detection and tracking is done, but there's still a lot left to do! Once the face is detected and extracted, its age and sex need to be identified and stored in a database. For our purposes, we've decided to write a Golang server that will act as a middle layer between the C++ application directly handling the image and everything else that stores, extracts, and displays the information. Since this doesn't demand super high performance (1-2 seconds between the face being detected and it appearing in the database is acceptable as long as the results are accurate), using Golang as a middle layer is an acceptable tradeoff for ease of interfacing.</p>
+                    </div>
+                </div>
+            </div>
+        </div><!-- row-->
+
+        <div class="row">
+            <div class="col-12 col-lg-12">
+                <div class="news-content">
+                    <div class="entry-content">
+                        <p>Next, we need to decide on a database to power the best way to store the data. The most important decision that needs to be made is whether to store the information in a SQL or NoSQL database. Because the range of queries that we're performing is quite limited, grouped essentially only based on date and gender, it makes more sense to be using a NoSQL database that allows for flexibility in data structure. As a result, we've chosen to store the information in the most common NoSQL database, and one we have experience with, MongoDB, and have linked it to interface with the Golang middle layer. An image of the overall interactions can be seen below.</p>
+                    </div>
+                </div>
+            </div>
+        </div><!-- row-->
+
+        <div class="row">
+            <div class="col-12 col-lg-2">
+                <div class="news-content">
+                    <div class="entry-content">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-12">
+                <div class="news-content">
+                    <div class="entry-content" style="text-align: center">
+                        <img src="../images/architecture.png" alt="">
+                        Architectural Design. Feb 28, 2019.
+                    </div>
+                </div>
+            </div><!-- .col -->
+        </div><!-- row-->
+
+
+
+
+        <div class="row">
+            <div class="col-12 col-lg-12">
+                <div class="news-content">
+                    <div class="entry-content">
+                        <p>We're definitely making good progress on this last bit of work that will tie everything together. We've already finished most of the middle Golang layer, set up the database with real data coming from the main program, and are looking to move onto the dashboard after all the backend work is done. Work is progressing smoothly and on track, and hopefully we'll be ready for any complications that rise up in the next few weeks!</p>
+                    </div>
+                </div>
+            </div>
+        </div><!-- row-->
+    </div>
+</div>
+
+
+<!-- ========== ======================= ========== -->
+<!-- ========== ======================= ========== -->
+<!-- ========== ======================= ========== -->
+<!-- ========== DO NOT TOUCH BELOW THIS ========== -->
+<!-- ========== ======================= ========== -->
+<!-- ========== ======================= ========== -->
+<!-- ========== ======================= ========== -->
+
+
+<footer class="site-footer">
+    <div class="footer-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                </div><!-- .col-12 -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </div><!-- .footer-bar -->
+</footer><!-- .site-footer -->
+
+<script type='text/javascript' src='../js/jquery.js'></script>
+<script type='text/javascript' src='../js/jquery.collapsible.min.js'></script>
+<script type='text/javascript' src='../js/swiper.min.js'></script>
+<script type='text/javascript' src='../js/jquery.countdown.min.js'></script>
+<script type='text/javascript' src='../js/circle-progress.min.js'></script>
+<script type='text/javascript' src='../js/jquery.countTo.min.js'></script>
+<script type='text/javascript' src='../js/jquery.barfiller.js'></script>
+<script type='text/javascript' src='../js/custom.js'></script>
+
+</body>
+</html>
